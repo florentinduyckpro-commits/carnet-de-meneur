@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#app {
+  min-height: 100%;
+  background-color: var(--color-background);
+}
+
+@theme {
+  --font-title: 'Fraunces', serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --color-background: #171613;
+  --color-component-background: #201f1a;
+  --color-text-primary: #e9e2d3;
+  --color-text-secondary: #a69c87;
+  --color-text-alert: #c29a4b;
+  --color-text-delete: #9b3a34;
+  --color-text-detail: #6f6857;
+  --color-secondary-button-background: #2b2822;
+  --color-secondary-button-border: #3a362d;
+  --color-primary-button-background: #c29a4b;
+  --color-primary-button-background-hover: #dbb572;
+  --color-primary-button-background-text: #171613;
+  --color-primary-button-border: #6f6857;
+}

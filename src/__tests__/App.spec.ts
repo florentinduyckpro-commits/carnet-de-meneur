@@ -4,8 +4,8 @@ import { mount } from '@vue/test-utils'
 import App from '../App.vue'
 
 describe('App', () => {
-  it('mounts renders properly', () => {
+  it('affiche le titre de l application', () => {
     const wrapper = mount(App)
-    expect(wrapper.text()).toContain('You did it!')
+    expect(wrapper.text()).toContain('Carnet de Meneur')
   })
 })

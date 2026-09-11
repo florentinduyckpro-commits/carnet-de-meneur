@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CarnetHeader from './components/CarnetHeader.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="flex min-h-screen flex-col bg-background">
+    <CarnetHeader />
+    <main class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <style scoped></style>
