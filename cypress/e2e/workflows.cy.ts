@@ -33,6 +33,9 @@ describe('Workflows principaux', () => {
     cy.get('dialog').contains('button', 'Modifier').click()
 
     cy.contains('h1', 'PNJ Cypress modifié').should('be.visible')
-    cy.contains('h1', 'PNJ Cypress').should('not.exist')
+    cy.get('h1').should(($headings) => {
+      const titles = [...$headings].map((heading) => heading.textContent?.trim())
+      expect(titles).not.to.include('PNJ Cypress')
+    })
   })
 })
